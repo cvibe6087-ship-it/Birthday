@@ -1,71 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Happy Birthday ❤️</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="hbd.css">
+    <title>Happy 17th Birthday Baby ❤️</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="hbd.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
 </head>
+
 <body>
 
-<div class="background"></div>
+    <!-- Background Music -->
+    <audio id="music" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
 
-<div class="balloons">
-<div class="balloon b1"></div>
-<div class="balloon b2"></div>
-<div class="balloon b3"></div>
-<div class="balloon b4"></div>
-<div class="balloon b5"></div>
-</div>
+    
 
-<div class="container">
+    <!-- Floating Hearts -->
+    <div class="hearts">
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+    </div>
 
-<h1>🎉 Happy Birthday! 🎉</h1>
+    <!-- Stars -->
+    <div class="stars"></div>
 
-<p class="subtitle">
-I have a surprise waiting for you...
-</p>
+    <!-- Balloons -->
+    <div class="balloon balloon1"></div>
+    <div class="balloon balloon2"></div>
+    <div class="balloon balloon3"></div>
+    <div class="balloon balloon4"></div>
 
-<div id="gift" class="gift">
+    <!-- Main Content -->
+    <div class="container">
 
-<div class="lid"></div>
+        <h1 class="title">
+            Happy Birthday
+            <span>Edisa Mae ❤️</span>
+        </h1>
 
-<div class="box"></div>
+        <p class="subtitle">
+            I made something special just for you...
+        </p>
 
-<div class="ribbon-v"></div>
+        <!-- Cake -->
+        <div class="cake">
 
-<div class="ribbon-h"></div>
+            <div class="candle">
+                <div class="flame" id="flame"></div>
+            </div>
 
-</div>
+            <div class="top-layer">
+                <div class="icing"></div>
+            </div>
 
-<div id="message" class="message hidden">
+            <div class="middle-layer"></div>
 
-<h2>💖 Surprise! 💖</h2>
+            <div class="bottom-layer"></div>
 
-<p>
-May today bring you endless happiness,
-beautiful memories,
-lots of laughter,
-and everything your heart wishes for.
+            <div class="plate"></div>
 
-Happy Birthday! 🎂
-</p>
+        </div>
 
-<button id="btn">
-Click Here ❤️
-</button>
+        <!-- Blow Button -->
+        <button id="blowBtn" class="btn">
+            🕯️ Blow the Candle
+        </button>
 
-<h3 id="randomMessage"></h3>
+        <!-- Smoke -->
+        <div id="smoke" class="smoke hidden">
+            💨
+        </div>
 
-</div>
+        <!-- Gift Button -->
+        <button id="giftBtn" class="btn hidden">
+            🎁 Open My Present
+        </button>
 
-</div>
+        <!-- Gift -->
+        <div id="giftBox" class="gift hidden">
 
-<canvas id="confetti"></canvas>
+            <div class="lid"></div>
 
-<script src="hbd.js"></script>
+            <div class="box"></div>
+
+            <div class="ribbon-vertical"></div>
+
+            <div class="ribbon-horizontal"></div>
+
+        </div>
+
+        <!-- Letter -->
+        <div id="letter" class="letter hidden">
+
+            <h2>❤️ Happy 17th Birthday Baby ❤️</h2>
+
+            <div id="typewriter" class="typewriter"></div>
+
+            <button id="loveBtn" class="btn hidden">
+                ❤️ Click Me
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Final Screen -->
+    <div id="ending" class="ending hidden">
+
+        <h1>I Love You Baby ❤️</h1>
+
+        <h3>Forever & Always</h3>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="hbd.js"></script>
 
 </body>
+
 </html>
